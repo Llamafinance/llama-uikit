@@ -2417,7 +2417,7 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
-            cakePriceUsd ? (React.createElement(PriceLink, { href: "https://bscscan.com/token/0x3B280Fd431D9DfaFA241e47b4b4ED60b65e682E7", target: "_blank" },
+            cakePriceUsd ? (React.createElement(PriceLink, { href: "https://bscscan.com/token/0x0FC013E24AE732fcEc9Eb6BF8CAE12782a56bE7E", target: "_blank" },
                 React.createElement(Icon$w, { width: "24px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             React.createElement(Flex, null, socials.map(function (social, index) {
