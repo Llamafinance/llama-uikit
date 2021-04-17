@@ -6,6 +6,7 @@ export { default as HomeIcon } from "./Home";
 export { default as LiquidityIcon } from "./Liquidity";
 export { default as IfoIcon } from "./Ifo";
 export { default as InfoIcon } from "./Info";
+export { default as GraphIcon } from "./Graph";
 export { default as LanguageIcon } from "./Language";
 export { default as LogoIcon } from "./Logo";
 export { default as MoonIcon } from "./Moon";
