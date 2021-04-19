@@ -12,7 +12,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
-    "build-copy": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist && cp -r ./dist /c/TEMP/LLAMA/front-end/node_modules/@llama/uikit && cp -r ./dist /c/TEMP/LLAMA/llama-swap-interface/node_modules/@llama/uikit",
+    "build-copy-v2": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist && cp -r ./dist /c/TEMP/LLAMA/front-end/node_modules/@llama/uikit && cp -r ./dist /c/TEMP/LLAMA/llama-swap-interface/node_modules/@llama/uikit",
+    "build-copy-v1": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist && cp -r ./dist /c/TEMP/LLAMA/frontend-v1/front-end/node_modules/@llama/uikit ",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",

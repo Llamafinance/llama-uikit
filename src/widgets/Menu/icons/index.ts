@@ -13,6 +13,7 @@ export { default as MoonIcon } from "./Moon";
 export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";
 export { default as PoolIcon } from "./Pool";
+export { default as ReferralIcon } from "./Referral";
 export { default as SunIcon } from "./Sun";
 export { default as SpitIcon } from "./Spit";
 export { default as TelegramIcon } from "./Telegram";
@@ -20,3 +21,4 @@ export { default as TicketIcon } from "./Ticket";
 export { default as TradeIcon } from "./Trade";
 export { default as TwitterIcon } from "./Twitter";
 export { default as RoadmapIcon } from "./Roadmap";
+export { default as LamaTokenIcon } from "./LamaToken"
