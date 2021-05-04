@@ -114,6 +114,28 @@ export const links = [
 ];
 
 export const socials = [
+  
+ 
+  {
+    label: "Discord",
+    icon: "DiscordIcon",
+    href: "https://discord.com/invite/Ps555Gkt",
+  },
+  {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://llamaswap.medium.com/",
+  },
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/llamafinance",
+  },
+  {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/llama_swap",
+  },
   {
     label: "Telegram",
     icon: "TelegramIcon",
@@ -127,11 +149,6 @@ export const socials = [
         href: "https://t.me/LlamaSwapAnn",
       }      
     ],
-  },
-  {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/llamaswap",
   },
 ];
 
