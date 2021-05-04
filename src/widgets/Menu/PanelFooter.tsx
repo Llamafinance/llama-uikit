@@ -51,7 +51,7 @@ const SocialEntry = styled.div`
   align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: 0 8px;
+  padding: 16px;
 `;
 
 const PanelFooter: React.FC<Props> = ({
@@ -88,7 +88,7 @@ const PanelFooter: React.FC<Props> = ({
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
-            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+            const iconProps = { color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "20px" : 0;
             if (social.items) {
               return (
