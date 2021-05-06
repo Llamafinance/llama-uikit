@@ -1,3 +1,4 @@
+export { default as AuditIcon } from "./Audit";
 export { default as DiscordIcon } from "./Discord";
 export { default as DocsIcon } from "./Docs";
 export { default as FarmIcon } from "./Farm";
@@ -14,6 +15,7 @@ export { default as LanguageIcon } from "./Language";
 export { default as ListingsIcon } from "./Listings";
 export { default as LogoIcon } from "./Logo";
 export { default as MediumIcon } from "./Medium";
+export { default as MegaphoneIcon } from "./Megaphone";
 export { default as MoonIcon } from "./Moon";
 export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";
