@@ -2379,7 +2379,7 @@ var socials = [
     {
         label: "Discord",
         icon: "DiscordIcon",
-        href: "https://discord.com/invite/Ps555Gkt",
+        href: "https://discord.gg/38ZrWUDDU9",
     },
     {
         label: "Medium",
