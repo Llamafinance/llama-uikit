@@ -29,3 +29,4 @@ export { default as TradeIcon } from "./Trade";
 export { default as TwitterIcon } from "./Twitter";
 export { default as RoadmapIcon } from "./Roadmap";
 export { default as LamaTokenIcon } from "./LamaToken"
+export { default as WoolTokenIcon } from "./Wool"
