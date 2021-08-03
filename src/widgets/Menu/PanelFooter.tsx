@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { LamaIcon, CogIcon, SvgProps, WoolIcon } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Box/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -13,7 +13,7 @@ import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
 
-interface Props extends PanelProps, PushedProps {}
+interface Props extends PanelProps, PushedProps { }
 
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 const { MoonIcon, SunIcon, LanguageIcon } = Icons;
@@ -60,6 +60,7 @@ const PanelFooter: React.FC<Props> = ({
   toggleTheme,
   isDark,
   cakePriceUsd,
+  woolPriceUsd,
   currentLang,
   langs,
   setLang,
@@ -76,15 +77,25 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      {cakePriceUsd ? (
-      <PriceLink href="https://bscscan.com/token/0x0FC013E24AE732fcEc9Eb6BF8CAE12782a56bE7E" target="_blank">
-        <PancakeRoundIcon width="24px" mr="8px" />
-        <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
-      </PriceLink>
-    ) : (
-      <Skeleton width={80} height={24} />
-    )}
-      <SocialEntry>        
+      <Flex justifyContent="space-around">
+        {cakePriceUsd ? (
+          <PriceLink href="https://bscscan.com/token/0x0FC013E24AE732fcEc9Eb6BF8CAE12782a56bE7E" target="_blank">
+            <LamaIcon width="24px" mr="8px" marginRight="5px" />
+            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+        {woolPriceUsd ? (
+          <PriceLink href="https://bscscan.com/token/0xCEBeFb92419615A069A3Fa65603F01d73632C9e8" target="_blank">
+            <WoolIcon width="24px" mr="8px" marginRight="5px"/>
+            <Text color="textSubtle" bold>{`$${woolPriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+      </Flex>
+      <SocialEntry>
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
@@ -119,7 +130,7 @@ const PanelFooter: React.FC<Props> = ({
             </Text>
             <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
           </Flex>
-        </Button>       
+        </Button>
       </SettingsEntry>
     </Container>
   );
