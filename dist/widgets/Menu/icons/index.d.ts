@@ -31,3 +31,4 @@ export { default as RoadmapIcon } from "./Roadmap";
 export { default as LamaTokenIcon } from "./LamaToken";
 export { default as WoolTokenIcon } from "./Wool";
 export { default as LppIcon } from "./Lpp";
+export { default as VaultIcon } from "./Vault";
